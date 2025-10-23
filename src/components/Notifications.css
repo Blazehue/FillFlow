@@ -1,0 +1,120 @@
+.notifications-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease-out;
+  border-left: 4px solid;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.notification-success {
+  border-left-color: #48bb78;
+}
+
+.notification-error {
+  border-left-color: #f56565;
+}
+
+.notification-warning {
+  border-left-color: #ed8936;
+}
+
+.notification-info {
+  border-left-color: #4299e1;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.notification-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.notification-success .notification-icon {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.notification-error .notification-icon {
+  background-color: #fed7d7;
+  color: #742a2a;
+}
+
+.notification-warning .notification-icon {
+  background-color: #feebc8;
+  color: #7c2d12;
+}
+
+.notification-info .notification-icon {
+  background-color: #bee3f8;
+  color: #2c5282;
+}
+
+.notification-message {
+  flex: 1;
+  font-size: 14px;
+  color: #2d3748;
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #a0aec0;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.notification-close:hover {
+  color: #4a5568;
+}
+
+@media (max-width: 768px) {
+  .notifications-container {
+    left: 20px;
+    right: 20px;
+    max-width: none;
+  }
+}
