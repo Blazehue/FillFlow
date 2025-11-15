@@ -2,7 +2,7 @@
 
 > 🚧 **Work In Progress**: This application is under active development. The UI/UX design is being refined, and many exciting features are coming soon! Stay tuned for updates.(design options will be issued soon)
 
-A powerful, browser-based PDF form filler built with React that allows users to input data into forms and automatically generates filled PDFs with exact positioning, fonts, and formatting matching the original PDF template.
+-A powerful, browser-based PDF form filler built with React that allows users to input data into forms and automatically generates filled PDFs with exact positioning, fonts, and formatting matching the original PDF template.
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)]()
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=black)]()
