@@ -1,4 +1,4 @@
-# PDF Form Filler Application.
+# PDF Form Filler Application
 
 > 🚧 **Work In Progress**: This application is under active development. The UI/UX design is being refined, and many exciting features are coming soon! Stay tuned for updates.(design options will be issued soon)
 
